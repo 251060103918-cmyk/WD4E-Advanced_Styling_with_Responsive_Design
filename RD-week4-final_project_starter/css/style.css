@@ -1,85 +1,181 @@
 
-<!DOCTYPE html>
-<html lang="en">
+/* =========================
+   MOBILE VIEW - DEFAULT
+   No media query for mobile
+========================= */
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover Vietnam | Travel Guide</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+body {
+  background-color: #f4f8fb;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 15px;
+  scroll-behavior: smooth;
+}
 
-<body>
-  <header>
-    <h1 id="top">Discover Vietnam</h1>
-  </header>
+header {
+  background-color: #d9eaf7;
+  padding: 20px;
+  border-radius: 10px;
+}
 
-  <main>
-    <p>
-      Vietnam is a beautiful country in Southeast Asia with a rich history,
-      colorful culture, delicious food, and breathtaking landscapes. From busy
-      cities to peaceful countryside, there are many wonderful places to explore.
-    </p>
+h1 {
+  text-align: center;
+  color: #17365d;
+  font-size: 32px;
+}
 
-    <p>
-      This travel guide introduces nine amazing destinations in Vietnam.
-      Visitors can discover historic towns, mountains, beaches, rivers,
-      and traditional architecture while experiencing the unique beauty
-      of each region.
-    </p>
+main {
+  padding: 10px;
+}
 
-    <div class="grid">
-      <figure>
-        <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=800&q=80" alt="Traditional boats floating on a beautiful river in Vietnam">
-        <figcaption>Ha Long Bay</figcaption>
-      </figure>
+p {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
 
-      <figure>
-        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80" alt="Vietnamese landscape with green mountains and countryside">
-        <figcaption>Vietnam Countryside</figcaption>
-      </figure>
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
 
-      <figure>
-        <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80" alt="Colorful traditional buildings along a historic street">
-        <figcaption>Hoi An</figcaption>
-      </figure>
+figure {
+  background-color: #e3f2fd;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
 
-      <figure>
-        <img src="https://images.unsplash.com/photo-1528132780673-2d6f9a1e5f6b?auto=format&fit=crop&w=800&q=80" alt="Historic architecture and cultural scenery in Vietnam">
-        <figcaption>Hue</figcaption>
-      </figure>
+figure img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
 
-      <figure>
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beautiful tropical beach with blue water and sand">
-        <figcaption>Da Nang Beach</figcaption>
-      </figure>
+figcaption {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  color: #17365d;
+}
 
-      <figure>
-        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Mountain scenery with a peaceful lake and green landscape">
-        <figcaption>Sa Pa</figcaption>
-      </figure>
+footer {
+  text-align: center;
+  padding: 20px;
+}
 
-      <figure>
-        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Mountain landscape beneath a beautiful sky">
-        <figcaption>Ninh Binh</figcaption>
-      </figure>
+footer a {
+  color: #174a7e;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-      <figure>
-        <img src="https://images.unsplash.com/photo-1519046903857-5e8f1f1a5f1a?auto=format&fit=crop&w=800&q=80" alt="Tropical island beach with palm trees and turquoise water">
-        <figcaption>Phu Quoc</figcaption>
-      </figure>
 
-      <figure>
-        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" alt="Modern city skyline with buildings and city lights">
-        <figcaption>Ho Chi Minh City</figcaption>
-      </figure>
-    </div>
-  </main>
+/* =========================
+   TABLET VIEW - 772px
+========================= */
 
-  <footer>
-    <a href="#top">Jump to the Top</a>
-  </footer>
-</body>
+@media screen and (min-width: 772px) {
 
-</html>
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  figure {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  figure img {
+    height: 70%;
+    border-radius: 50%;
+  }
+
+  figcaption {
+    flex-shrink: 0;
+  }
+
+  figure:last-child {
+    grid-column: span 2;
+  }
+
+}
+
+
+/* =========================
+   LARGE SCREEN - 992px
+========================= */
+
+@media screen and (min-width: 992px) {
+
+  figure:nth-child(3n) {
+    grid-column: span 2;
+  }
+
+  figure {
+    border-radius: 0;
+  }
+
+  figure img {
+    border-radius: 0;
+  }
+
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  body {
+    scroll-behavior: auto;
+  }
+
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #121212;
+    color: #f5f5f5;
+  }
+
+  header {
+    background-color: #252525;
+  }
+
+  h1 {
+    color: #fff176;
+  }
+
+  figure {
+    background-color: #292929;
+    border-color: #222222;
+  }
+
+  figcaption {
+    color: #fff176;
+  }
+
+  footer a {
+    color: #fff176;
+  }
+
+}
