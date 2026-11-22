@@ -1,143 +1,85 @@
-body {
-    background-color: #dedede;
-}
 
-h1 {
-    text-align: center;
-    font-family:Arial, sans-serif;
-    font-size: 32px;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-a {
-    color: #000;
-    text-decoration: none;
-    font-family:Arial, sans-serif;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Vietnam | Travel Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-p {
-   font-size: 25px;
-   font-family:Arial, sans-serif;
-}
+<body>
+  <header>
+    <h1 id="top">Discover Vietnam</h1>
+  </header>
 
-img{
-  width:100%;
-}
+  <main>
+    <p>
+      Vietnam is a beautiful country in Southeast Asia with a rich history,
+      colorful culture, delicious food, and breathtaking landscapes. From busy
+      cities to peaceful countryside, there are many wonderful places to explore.
+    </p>
 
+    <p>
+      This travel guide introduces nine amazing destinations in Vietnam.
+      Visitors can discover historic towns, mountains, beaches, rivers,
+      and traditional architecture while experiencing the unique beauty
+      of each region.
+    </p>
 
-p{
-  text-align:center;
-}
+    <div class="grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=800&q=80" alt="Traditional boats floating on a beautiful river in Vietnam">
+        <figcaption>Ha Long Bay</figcaption>
+      </figure>
 
-div img{
-    width:150px;
-    height: 150px;
-    display:block;
-    margin:auto;
-}
+      <figure>
+        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80" alt="Vietnamese landscape with green mountains and countryside">
+        <figcaption>Vietnam Countryside</figcaption>
+      </figure>
 
-div{
-  display: inline-block;
-  width: 24%;
-  margin: 5px;
-  padding: 2px;
-}
+      <figure>
+        <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=800&q=80" alt="Colorful traditional buildings along a historic street">
+        <figcaption>Hoi An</figcaption>
+      </figure>
 
+      <figure>
+        <img src="https://images.unsplash.com/photo-1528132780673-2d6f9a1e5f6b?auto=format&fit=crop&w=800&q=80" alt="Historic architecture and cultural scenery in Vietnam">
+        <figcaption>Hue</figcaption>
+      </figure>
 
+      <figure>
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Beautiful tropical beach with blue water and sand">
+        <figcaption>Da Nang Beach</figcaption>
+      </figure>
 
+      <figure>
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Mountain scenery with a peaceful lake and green landscape">
+        <figcaption>Sa Pa</figcaption>
+      </figure>
 
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Mountain landscape beneath a beautiful sky">
+        <figcaption>Ninh Binh</figcaption>
+      </figure>
 
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519046903857-5e8f1f1a5f1a?auto=format&fit=crop&w=800&q=80" alt="Tropical island beach with palm trees and turquoise water">
+        <figcaption>Phu Quoc</figcaption>
+      </figure>
 
+      <figure>
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" alt="Modern city skyline with buildings and city lights">
+        <figcaption>Ho Chi Minh City</figcaption>
+      </figure>
+    </div>
+  </main>
 
+  <footer>
+    <a href="#top">Jump to the Top</a>
+  </footer>
+</body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-main {
-    border: 5px #000 solid;
-    margin: 10px;
-}
- */
-/* 
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-}
- */
-/* img{
-    width: 200px;
-    height: 200px;
-    padding: 5px;
-} */
-
-/* .child {
-    position: relative;
-    display: inline-block;
-    border: 5px black solid;
-    margin: 5px;
-    border-radius: 5px;
-} */
-
-/* 
-
-.label {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-} */
-/* 
-.button {
-    display: inline-block;
-    border: 2px solid #000;
-    padding: 5px;
-    border-radius: 25px;
-}
- */
-/* 
-.button:hover {
-    background-color:#fff;
-} */
-
-/* 
-footer {
-    display: flex;
-    justify-content: center;
-} */
-
-/* 
-header {
-    border-radius: 5px;
-    border: 5px #000 solid;
-    margin: 10px;
-} */
-
-/* 
-.label {
-    display: none;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-} */
-/* 
-.child:hover .label {
-    display: block;
-} */
+</html>
